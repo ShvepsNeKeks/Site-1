@@ -1,0 +1,411 @@
+/* Общие настройки */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --accent-color: #F7654A;
+  --dark-color: #404149;
+  --gray-color: #999999;
+  --white-color: #FFFFFF;
+  --background-color: #F7F7F7;
+}
+
+.text-h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.text-h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.text-h4 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: 0.42px;
+}
+
+.text-p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.text-reviews {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* шапка */
+
+.header {
+  min-height: 740px;
+  background-image: url(../img/first-screen-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 20px;
+  margin-bottom: 112px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.burger {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger__line {
+  display: block;
+  background-color: var(--white-color);
+  width: 21px;
+  height: 3px;
+  margin-bottom: 4px;
+}
+
+.burger__line:last-child {
+  margin-bottom: 0;
+}
+
+.h1 {
+  font-weight: 500;
+  font-size: 64px;
+  letter-spacing: 1.28px;
+  max-width: 734px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 17px;
+  color: var(--white-color);
+}
+
+.h2 {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 734px;
+  margin: 0 auto;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/* О компании */
+
+.about {
+  position: relative;
+}
+
+.about__info {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1110px;
+  min-height: 300px;
+  padding: 57px 130px;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.about__grid-item {
+  text-align: center;
+  width: 190px;
+}
+
+.about__h4 {
+  color: var(--accent-color);
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 107px;
+  text-transform: uppercase;
+}
+
+.about__h5 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+
+.about__p {
+  color: var(--gray-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-transform: lowercase;
+  padding-top: 5px;
+}
+
+/* Проекты */
+
+.projects__container {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding-top: 250px;
+}
+
+.projects__h5 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projects__flex-box {
+  display: flex;
+  margin-bottom: 126px;
+}
+
+.projects__flex-items {
+  margin-right: 30px;
+}
+
+.projects__flex-items:last-child {
+  margin-right: 0;
+}
+
+.projects__img {
+  margin-bottom: 40px;
+}
+
+.projects__liner {
+  margin-bottom: 15px;
+  width: 55px;
+  height: 6px;
+  background-color: var(--accent-color);
+}
+
+.projects__h6 {
+  margin-bottom: 10px;
+}
+
+
+/* Запросы */
+
+.requests {
+  max-height: 181px;
+  background-color: var(--accent-color);
+}
+
+.requests__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.requests__items-left {
+  padding: 30px 0 45px 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.requests__h4 {
+  font-size: 48px;
+  letter-spacing: 0.96px;
+  margin-bottom: 7px;
+}
+
+.requests__h5 {
+  font-size: 24px;
+  letter-spacing: 0.48px;
+}
+
+.requests__items-right {
+  font-family: "Oswald", sans-serif;
+}
+
+.requests__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  width: 175px;
+  height: 49px;
+  padding: 14px 30px;
+  border: none;
+  line-height: 15px;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.requests__btn-img {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  margin-right: 15px;
+}
+
+.requests__btn-text {
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+/* Сервис комании */
+
+.services {
+  padding: 150px 0;
+}
+
+.services__container {
+  margin: 0 auto;
+  max-width: 1110px;
+  text-align: center;
+}
+
+.services__h2 {
+  margin-bottom: 55px;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+
+}
+
+.services__grid-item {
+  padding: 59px 0;
+  width: 350px;
+  height: 250px;
+  background-color: var(--background-color);
+}
+
+.services__icon {
+  margin-bottom: 21px;
+}
+
+.services__h4 {
+  margin: 0 auto;
+  max-width: 172px;
+  text-transform: uppercase;
+}
+
+/* Портфолио компании */
+
+.porfolio {}
+
+.porfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 0;
+}
+
+.porfolio__grid-item {}
+
+.porfolio__img {
+  display: block;
+  width: 100%;
+}
+
+/* Ответы на вопросы */
+
+.questions {
+  padding: 150px 0;
+}
+
+.questions__container {
+  padding-left: 200px
+}
+
+.questions__h2 {
+  margin-bottom: 50px;
+}
+
+.questions__accordion {}
+
+.questions__accordion-item {}
+
+.questions__h3 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.questions__p {
+  margin-bottom: 40px;
+  max-width: 730px;
+  color: var(--gray-color);
+}
+
+.questions__h3.open::before, 
+.questions__h3.close::before {
+  display: inline-block;
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+  content: "";
+  background-image: url(../img/Arrow-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.questions__h3.open::before {
+  transform: rotate(-90deg);
+}
+
+.questions__h3.close + .questions__p {
+  display: none;
+}
