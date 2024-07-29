@@ -234,7 +234,7 @@ body {
 /* Запросы */
 
 .requests {
-  max-height: 181px;
+  min-height: 181px;
   background-color: var(--accent-color);
 }
 
@@ -453,3 +453,42 @@ body {
 } */
 
 .partners__img {}
+
+/* Отзывы */
+
+.reviews {
+  padding: 145px 0;
+}
+
+.reviews__container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.reviews__h2 {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.reviews__grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.reviews__card {
+  padding: 20px 30px;
+  margin-bottom: 15px;
+  background-color: var(--background-color);
+}
+
+.reviews__quotes {
+  margin-bottom: -40px;
+  font-size: 98px;
+  line-height: 1;
+  color: var(--accent-color);
+}
+
+.reviews__author-accent {
+  color: var(--accent-color);
+}
