@@ -122,12 +122,45 @@
 @media screen and (max-width: 1280px) {
   .porfolio__grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 15px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .porfolio__grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Ответы на вопросы */
+
+@media screen and (max-width: 1280px) {
+  .questions__container {
+    padding-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+/* Партнёры */
+
+@media screen and (max-width: 1280px) {
+  .partners__flex-container {
+    justify-content: center;
+  }
+
+  .partners__flex-item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partners__flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners__flex-item {
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 }
