@@ -198,8 +198,8 @@ body {
 }
 
 .projects__h5 {
-  text-align: center;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .projects__flex-box {
@@ -247,7 +247,7 @@ body {
 }
 
 .requests__items-left {
-  padding: 30px 0 45px 0;
+  padding: 30px 0;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -256,7 +256,7 @@ body {
 
 .requests__h4 {
   font-size: 48px;
-  letter-spacing: 0.96px;
+  letter-spacing: 1.2px;
   margin-bottom: 7px;
 }
 
@@ -267,13 +267,13 @@ body {
 
 .requests__items-right {
   font-family: "Oswald", sans-serif;
+  padding-top: 20px;
 }
 
 .requests__btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 8px;
   width: 175px;
   height: 49px;
   padding: 14px 30px;
