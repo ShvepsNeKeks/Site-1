@@ -29,42 +29,20 @@
 /* Проекты компании */
 
 @media screen and (max-width: 1280px) {
-  .projects__container {
-    padding-top: 400px;
-  }
-
-  .projects__flex-box {
-    display: flex;
-    flex-direction: column;
-    padding-left: 15px;
-    margin-right: 15px;
-  }
-
-  .projects__flex-items {
-    margin-right: 0;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
-  .projects__liner {
-    margin: 0 auto 15px;
+  .about {
+    padding: 150px 20px 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .projects__flex-box {
-    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .projects__flex-items {
     margin-right: 0;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
-  .projects__liner {
-    margin: 0 auto 15px;
+    margin-bottom: 30px;
   }
 }
 
@@ -173,5 +151,34 @@
   }
   .reviews__grid-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Контакты */
+
+@media screen and (max-width: 1280px) {
+  .contacts__grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Подвал */
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    padding: 30px 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__flex-container {
+    flex-direction: column;
   }
 }
