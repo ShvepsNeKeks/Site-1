@@ -238,7 +238,6 @@ body {
   color: var(--gray-color);
 }
 
-
 /* Запросы */
 
 .requests {
@@ -352,16 +351,12 @@ body {
 
 /* Портфолио компании */
 
-.porfolio {}
-
 .porfolio__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   gap: 0;
 }
-
-.porfolio__grid-item {}
 
 .porfolio__img {
   display: block;
@@ -383,10 +378,6 @@ body {
   margin-bottom: 50px;
   text-align: center;
 }
-
-.questions__accordion {}
-
-.questions__accordion-item {}
 
 .questions__h3 {
   margin-bottom: 23px;
@@ -451,17 +442,6 @@ body {
   color: var(--white-color);
 }
 
-.partners__flex-item {
-  /* margin-right: 40px;
-  margin-bottom: 10px; */
-}
-
-/* .partners__flex-item:nth-child(5n){
-  margin-right: 0;
-} */
-
-.partners__img {}
-
 /* Отзывы */
 
 .reviews {
@@ -501,7 +481,6 @@ body {
   color: var(--accent-color);
 }
 
-
 /* Контакты */
 
 .contacts {
@@ -540,8 +519,6 @@ body {
   margin-bottom: 15px;
   color: var(--gray-color);
 }
-
-.contacts__h4 {}
 
 .contacts__accent-h4 {
   color: var(--accent-color);
