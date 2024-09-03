@@ -9,6 +9,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <title>Test Site</title>
@@ -16,17 +18,28 @@
 
 <body>
 
+  <!-- Сайтбар -->
+   
+  <ul id="slide-out" class="sidenav">
+    <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+    <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
+    <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
+    <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!"><i class="material-icons sidenav-close">close</i>Закрыть</a></li>
+  </ul>
+
   <!-- Шапка -->
 
   <header class="header">
     <div class="header__container">
       <div class="header__title">
         <img src="img/logo.svg" alt="Вектор" class="logo">
-        <button class="burger">
+        <a class="burger sidenav-trigger" data-target="slide-out">
           <span class="burger__line"></span>
           <span class="burger__line"></span>
           <span class="burger__line"></span>
-        </button>
+        </a>
       </div>
       <h1 class="h1">Реализуем крупнейшие проекты в россии</h1>
       <h2 class="h2">Стадионы, газопроводы, мосты, дамбы</h2>
@@ -349,6 +362,10 @@
     </div>
   </section>
 
+  <!-- Js -->
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
