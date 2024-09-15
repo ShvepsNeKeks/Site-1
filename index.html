@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,9 @@
   <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
-  <title>Test Site</title>
+  <script type="text/javascript" src="js/materialize.min.js" defer></script>
+  <script type="text/javascript" src="js/main.js" defer></script>
+  <title>Газпром Арена</title>
 </head>
 
 <body>
@@ -104,7 +106,6 @@
     </div>
   </section>
 
-
   <!-- Запросы -->
 
   <section class="requests">
@@ -114,13 +115,22 @@
         <h5 class="requests__h5">Реализуем самые смелые решения в России!</h5>
       </div>
       <div class="requests__items-right">
-        <button class="requests__btn">
+        <a class="requests__btn waves-effect waves-light btn modal-trigger" href="#modal1">
           <img class="requests__btn-icon" src="img/.svg" alt="mail-logo">
           <span class="requests__btn-text">Ваш запрос</span>
-        </button>
+        </a>
       </div>
     </div>
   </section>
+
+  <!-- Модальное окно -->
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Ваш запрос</h4>
+      <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Свой маленькая бросил домах на берегу, дорогу парадигматическая дороге рот за всемогущая всеми ты реторический собрал журчит знаках грустный. Единственное рыбными алфавит своего но себя свое напоивший всеми точках рукописи? Проектах предложения они которое он мир сих текстов маленький рыбного бросил прямо точках строчка рукописи пор города, заголовок путь там инициал текста большого парадигматическая что ручеек реторический. По всей одна подпоясал своих, проектах свою осталось власти обеспечивает текста его от всех, имеет переулка лучше рыбного повстречался которой предупреждал свой путь грамматики жаренные языком. Подзаголовок текстов всеми рот ему несколько последний ты напоивший власти?</p>
+    </div>
+  </div>
 
   <!-- Сервис компании -->
 
@@ -308,10 +318,10 @@
         <h5 class="requests__h5">Оставьте заявку и мы свяжемся с вами!</h5>
       </div>
       <div class="requests__items-right">
-        <button class="requests__btn">
+        <a class="requests__btn waves-effect waves-light btn modal-trigger" href="#modal1">
           <img class="requests__btn-icon" src="img/.svg" alt="mail-logo">
           <span class="requests__btn-text">Ваш запрос</span>
-        </button>
+        </a>
       </div>
     </div>
   </section>
@@ -361,11 +371,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Js -->
-
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
