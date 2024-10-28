@@ -495,7 +495,7 @@ body {
   color: var(--gray-color);
 }
 
-.contacts__h4 > a {
+.contacts__h4>a {
   text-decoration: none;
   color: inherit;
 }

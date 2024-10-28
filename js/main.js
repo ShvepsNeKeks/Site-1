@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
   var sidenav = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(sidenav);
+  var inst_sidenav = M.Sidenav.init(sidenav);
 
   var modal = document.querySelectorAll('.modal');
-  var instances = M.Modal.init(modal);
+  var inst_modal = M.Modal.init(modal);
+
+  var gallery = document.querySelectorAll('.materialboxed');
+  var inst_gallery = M.Materialbox.init(gallery);
 });
